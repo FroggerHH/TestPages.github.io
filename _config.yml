@@ -1,3 +1,4 @@
-theme: jekyll-theme-cayman
+theme: hyde
 title: Всё о компьютерах
 description: Сайт с информацией о компьютерах и программном обеспечении.
+language: ru-RU
