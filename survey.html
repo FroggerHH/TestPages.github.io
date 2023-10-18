@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Анкета</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
-    <h1>Анкета</h1>
-    <p>Мы ценим ваш отзыв. Пожалуйста, оставьте ваше мнение ниже.</p>
-    <form action="https://formspree.io/f/xqkvwvyq" method="post">
-        <label for="email">Ваша почта:</label><br>
-        <input type="email" id="email" name="_replyto" required><br><br>
-        <label for="name">Ваше имя:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
-        <label for="review">Ваш отзыв:</label><br>
-        <textarea id="review" name="review" rows="4" cols="50" required></textarea><br><br>
-        <input type="submit" value="Отправить">
-    </form>
+    <header>
+        <h1>Анкета</h1>
+    </header>
+
+    <nav>
+        <h3>Меню</h3>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="programs.html">Программы</a></li>
+            <li><a href="dictionary.html">Словарь</a></li>
+            <li><a href="survey.html">Анкета</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <h2>Оставьте свой отзыв:</h2>
+        <form action="https://formspree.io/f/xqkvwvyq" method="POST">
+            <label for="name">Имя:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="_replyto" required><br><br>
+            <label for="review">Отзыв:</label><br>
+            <textarea id="review" name="review" rows="4" cols="50" required></textarea><br><br>
+            <input type="submit" value="Отправить">
+        </form>
+    </article>
+
+    <footer>
+        <p>© 2023 Всё о компьютерах</p>
+    </footer>
 </body>
+
 </html>
