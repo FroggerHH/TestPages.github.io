@@ -1,38 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Программы для компьютера</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
     <header>
         <h1>Программы для компьютера</h1>
     </header>
-    <nav>
-        <h3>Меню</h3>
-        <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="programs.html">Программы</a></li>
-            <li><a href="dictionary.html">Словарь</a></li>
-            <li><a href="survey.html">Анкета</a></li>
-        </ul>
-    </nav>
+
+    <object data="menu.html"></object>
+
     <article>
         <div style="text-align: center;">
             <img src="compProgs1.png" alt="Программы для компьютера" style="width: 300px; height: 200px;">
         </div>
-        <div class="pasteHere">
-            <p id="fileTextHere">text from files/text.txt</p>
-        </div>
-        <script>
-            $('#fileTextHere').load("[file url or location path]");
-        </script>
-        <object type="text/plain" data="computer_programs.txt" width="100%" height="100%">
+        <object data="computer_programs.txt" width="100%" height="100%">
             Ваш браузер не поддерживает отображение текста.
         </object>
     </article>
+
     <footer>
         <p>© 2023 Всё о компьютерах</p>
     </footer>
 </body>
+
 </html>
