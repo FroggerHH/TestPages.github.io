@@ -6,12 +6,23 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
+            background: linear-gradient(to bottom, #4F94CD, #63B8FF);
+        }
+
+        header {
+            background: #4285f4;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
         }
 
         nav {
             float: left;
             width: 20%;
+            background-color: #f1f1f1;
+            height: 100vh;
+            padding: 20px;
         }
 
         nav ul {
@@ -26,16 +37,44 @@
         article {
             float: left;
             width: 80%;
-            padding: 0 20px;
+            padding: 20px;
+        }
+
+        footer {
+            clear: both;
+            background-color: #4285f4;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
 
         h1 {
+            color: #ffffff;
+        }
+
+        p {
+            color: #ffffff;
+        }
+
+        a {
             color: #4285f4;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
+    <header>
+        <h1>Всё о компьютерах</h1>
+    </header>
+
     <nav>
         <h3>Меню</h3>
         <ul>
@@ -47,7 +86,6 @@
     </nav>
 
     <article>
-        <h1>Всё о компьютерах</h1>
         <p>Добро пожаловать на наш сайт, посвященный миру компьютеров. Здесь вы найдете интересные статьи, новости, руководства и советы по различным аспектам компьютерных технологий.</p>
         <p>Изучите наши разделы:</p>
         <ul>
@@ -56,6 +94,10 @@
             <li><a href="survey.html">Анкета</a> - оставьте свой отзыв и помогите улучшить наш сайт.</li>
         </ul>
     </article>
+
+    <footer>
+        <p>© 2023 Всё о компьютерах</p>
+    </footer>
 </body>
 
 </html>
