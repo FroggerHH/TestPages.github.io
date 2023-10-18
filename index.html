@@ -7,22 +7,36 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            background: linear-gradient(to bottom, #4F94CD, #63B8FF);
+            background: none;
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
         }
 
         header {
-            background: #4285f4;
+            background: #24292e;
             color: #ffffff;
             text-align: center;
             padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
 
         nav {
-            float: left;
-            width: 20%;
-            background-color: #f1f1f1;
-            height: 100vh;
+            flex: 0 0 10%;
+            background-color: #f6f8fa;
             padding: 20px;
+            height: 100vh;
+            position: fixed;
+            width: 10%;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-right: 2%;
         }
 
         nav ul {
@@ -35,32 +49,35 @@
         }
 
         article {
-            float: left;
-            width: 80%;
             padding: 20px;
+            color: #24292e;
+            margin-top: 60px;
+            margin-left: 15%;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         footer {
-            clear: both;
-            background-color: #4285f4;
+            background-color: #24292e;
             color: #ffffff;
             text-align: center;
             padding: 10px 0;
+            width: 100%;
             position: fixed;
             bottom: 0;
-            width: 100%;
         }
 
         h1 {
-            color: #ffffff;
+            margin: 0;
         }
 
         p {
-            color: #ffffff;
+            margin: 0;
         }
 
         a {
-            color: #4285f4;
+            color: #0366d6;
             text-decoration: none;
         }
 
@@ -86,13 +103,11 @@
     </nav>
 
     <article>
-        <p>Добро пожаловать на наш сайт, посвященный миру компьютеров. Здесь вы найдете интересные статьи, новости, руководства и советы по различным аспектам компьютерных технологий.</p>
-        <p>Изучите наши разделы:</p>
-        <ul>
-            <li><a href="programs.html">Программы</a> - узнайте о различных типах программного обеспечения.</li>
-            <li><a href="dictionary.html">Словарь</a> - познакомьтесь с терминами из мира компьютеров.</li>
-            <li><a href="survey.html">Анкета</a> - оставьте свой отзыв и помогите улучшить наш сайт.</li>
-        </ul>
+        <div style="text-align: center;">
+            <img src="compPhoto1.png" alt="Компьютер" style="width: 150px; height: 150px; border-radius: 50%;">
+            <div style="margin-top: 10px; font-weight: bold;">Компьютер</div>
+        </div>
+        <p>Компьютер - это электронное устройство, способное выполнять заданную и программируемую информационную обработку. В настоящее время компьютеры используются повсеместно в различных сферах, таких как образование, бизнес, наука, развлечения и многие другие.</p>
     </article>
 
     <footer>
