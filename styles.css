@@ -2,12 +2,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    
+    position: relative;
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    width: auto;
 }
 
 header {
-    width: 100%; 
+    width: auto; 
     min-width: 100%;
+    max-width: 100%;
     background-color: #333;
     color: white;
     text-align: center;
@@ -60,7 +66,9 @@ footer {
     padding: 0;
     position: absolute;
     bottom: 0;
-    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    width: auto;
     background-color: #333;
     color: white;
 }
