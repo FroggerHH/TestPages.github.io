@@ -57,7 +57,7 @@ article img {
 footer {
     text-align: center;
     padding: 20;
-    position: auto;
+    position: absolute;
     bottom: 0;
     width: 100%;
     background-color: #333;
