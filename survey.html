@@ -3,23 +3,21 @@
 
 <head>
     <title>Анкета</title>
+    <link rel="shortcut icon" type="image/png" href="compPhoto1.png">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link id="theme-style" rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
         <h1>Анкета</h1>
+            <div class="container">
+                <a href="index.html" class="button">Главная</a>
+                <a href="programs.html" class="button">Программы</a>
+                <a href="dictionary.html" class="button">Словарь</a>
+                <a href="survey.html" class="button">Анкета</a>
+           </div>
     </header>
-
-    <nav>
-        <h3>Меню</h3>
-        <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="programs.html">Программы</a></li>
-            <li><a href="dictionary.html">Словарь</a></li>
-            <li><a href="survey.html">Анкета</a></li>
-        </ul>
-    </nav>
 
     <article>
         <h2>Оставьте свой отзыв:</h2>
@@ -36,6 +34,37 @@
 
     <footer>
         <p>© 2023 Всё о компьютерах</p>
+        <div class="switch-container">
+    <span class="switch-label">Тёмная тема</span>
+    <label class="switch">
+      <input type="checkbox" onclick="toggleTheme()">
+      <span class="slider round"></span>
+    </label>
+        </div>
+
+        <script>
+    function toggleTheme() {
+      var theme = document.getElementById('theme-style');
+      if (theme.getAttribute('href') == 'styles.css') {
+        theme.href = 'dark-theme.css';
+        localStorage.setItem('theme', 'dark');
+      } else {
+        theme.href = 'styles.css';
+        localStorage.setItem('theme', 'light');
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+  var savedTheme = localStorage.getItem('theme');
+  var theme = document.getElementById('theme-style');
+  if (savedTheme === 'dark') {
+    theme.href = 'dark-theme.css';
+    document.querySelector('.switch input[type="checkbox"]').checked = true;
+  } else {
+    theme.href = 'styles.css';
+  }
+});
+        </script>
     </footer>
 </body>
 
