@@ -5,8 +5,8 @@ body {
 }
 
 header {
-    width:auto; 
-    max-width:100%;
+    width: 100%; 
+    max-width: 100%;
     background-color: #333;
     color: white;
     text-align: center;
@@ -39,8 +39,8 @@ header {
 
 article {
     width:auto; 
-    max-width:95%;
-    max-height:100%;
+    max-width: 95%;
+    max-height: 100%;
     margin: 50px auto;
     padding: 20px;
     background-color: #f2f2f2;
