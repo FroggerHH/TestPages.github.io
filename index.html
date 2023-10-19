@@ -1,75 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru-RU">
 
 <head>
     <title>Всё о компьютерах</title>
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-    
-    <link rel="shortcut icon" type="image/png" href="compPhoto1.png">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link id="theme-style" rel="stylesheet" href="styles.css">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <link href="compPhoto1.png" rel="shortcut icon" type="image/png">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" id="theme-style" rel="stylesheet">
+
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
 </head>
 
-    <footer>
-        <div class="switch-container">
-    <span class="switch-label">Тёмная тема</span>
-    <label class="switch">
-      <input type="checkbox" onclick="toggleTheme()">
-      <span class="slider round"></span>
-    </label>
-        </div>
-        <div class="container">
-        <p>© 2023 Всё о компьютерах.</p>
-            <a>href="https://github.com/FroggerHH/TestPages.github.io/blob/main/">Исходный код</a>
-        </div>
-
-        <script>
-    function toggleTheme() {
-      var theme = document.getElementById('theme-style');
-      if (theme.getAttribute('href') == 'styles.css') {
-        theme.href = 'dark-theme.css';
-        localStorage.setItem('theme', 'dark');
-      } else {
-        theme.href = 'styles.css';
-        localStorage.setItem('theme', 'light');
-      }
-    }
-
-    document.addEventListener('DOMContentLoaded', function() {
-  var savedTheme = localStorage.getItem('theme');
-  var theme = document.getElementById('theme-style');
-  if (savedTheme === 'dark') {
-    theme.href = 'dark-theme.css';
-    document.querySelector('.switch input[type="checkbox"]').checked = true;
-  } else {
-    theme.href = 'styles.css';
-  }
-});
-        </script>
-    </footer>
 
 <body>
+<div id="wrap">
     <header>
         <h1>Всё о компьютерах</h1>
-            <div class="container">
-                <a href="index.html" class="button">Главная</a>
-                <a href="programs.html" class="button">Программы</a>
-                <a href="dictionary.html" class="button">Словарь</a>
-                <a href="survey.html" class="button">Анкета</a>
-           </div>
+        <div class="wrapper">
+            <a class="button" href="index.html">Главная</a>
+            <a class="button" href="programs.html">Программы</a>
+            <a class="button" href="dictionary.html">Словарь</a>
+            <a class="button" href="survey.html">Анкета</a>
+        </div>
     </header>
-
     <article>
         <div style="text-align: center; margin-bottom: 20px;">
-            <img src="compPhoto1.png" alt="Компьютер" style="width: 150px; height: 150px; border-radius: 50%;">
+            <img alt="Компьютер" src="compPhoto1.png" style="width: 150px; height: 150px; border-radius: 50%;">
             <div style="margin-top: 10px; font-weight: bold;">Компьютер</div>
         </div>
         <h2>Что такое компьютер?</h2>
-        <p>Компьютер - это электронное устройство, способное выполнять различные операции с данными в соответствии с заданными инструкциями. Компьютеры используются в различных сферах, включая науку, бизнес, образование и развлечения.</p>
+        <p>Компьютер - это электронное устройство, способное выполнять различные операции с данными в соответствии с
+            заданными инструкциями. Компьютеры используются в различных сферах, включая науку, бизнес, образование и
+            развлечения.</p>
 
         <h2>Зачем нужен компьютер?</h2>
-        <p>Компьютеры используются для обработки информации, хранения данных, выполнения сложных вычислений, создания контента, общения и многого другого. Они стали неотъемлемой частью современного общества.</p>
+        <p>Компьютеры используются для обработки информации, хранения данных, выполнения сложных вычислений, создания
+            контента, общения и многого другого. Они стали неотъемлемой частью современного общества.</p>
     </article>
+    <footer>
+        <div class="switch-container">
+            <span class="switch-label">Тёмная тема</span>
+            <label class="switch">
+                <input onclick="toggleTheme()" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <br>
+        <div class="container">
+            <p>© 2023 Всё о компьютерах. <a href="https://github.com/FroggerHH/TestPages.github.io/blob/main/">Исходный
+                код</a></p>
+        </div>
+
+        <script>
+            function toggleTheme() {
+                const theme = document.getElementById('theme-style');
+                if (theme.getAttribute('href') === 'styles.css') {
+                    theme.href = 'dark-theme.css';
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    theme.href = 'styles.css';
+                    localStorage.setItem('theme', 'light');
+                }
+            }
+
+            document.addEventListener('DOMContentLoaded', function () {
+                const savedTheme = localStorage.getItem('theme');
+                const theme = document.getElementById('theme-style');
+                if (savedTheme === 'dark') {
+                    theme.href = 'dark-theme.css';
+                    document.querySelector('.switch input[type="checkbox"]').checked = true;
+                } else theme.href = 'styles.css';
+            });
+        </script>
+    </footer>
+
+    <noscript>Please enable javascript to continue.</noscript>
+</div>
 </body>
 
 </html>
