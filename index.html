@@ -3,8 +3,9 @@
 
 <head>
     <title>Всё о компьютерах</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="shortcut icon" type="image/png" href="compPhoto1.png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link id="theme-style" rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -32,6 +33,14 @@
 
     <footer>
         <p>© 2023 Всё о компьютерах</p>
+        <div class="switch-container">
+    <span class="switch-label">Тёмная тема</span>
+    <label class="switch">
+      <input type="checkbox" onclick="toggleTheme()">
+      <span class="slider round"></span>
+    </label>
+        </div>
+          <script src="themeSwitchScript.js"></script>
     </footer>
 </body>
 
