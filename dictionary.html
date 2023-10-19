@@ -37,10 +37,13 @@
 
     <footer>
         <p>© 2023 Всё о компьютерах</p>
-        <label class="switch">
-           <input type="checkbox" onclick="toggleTheme()">
-           <span class="slider round"></span>
-        </label>
+        <div class="switch-container">
+    <span class="switch-label">Тёмная тема</span>
+    <label class="switch">
+      <input type="checkbox" onclick="toggleTheme()">
+      <span class="slider round"></span>
+    </label>
+        </div>
         <script>
     function toggleTheme() {
       var theme = document.getElementById('theme-style');
