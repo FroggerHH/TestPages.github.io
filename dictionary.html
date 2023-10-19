@@ -4,6 +4,7 @@
 <head>
     <title>Словарь</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link id="theme-style" rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -37,6 +38,20 @@
 
     <footer>
         <p>© 2023 Всё о компьютерах</p>
+        <label class="switch">
+           <input type="checkbox" onclick="toggleTheme()">
+           <span class="slider round"></span>
+        </label>
+        <script>
+    function toggleTheme() {
+      var theme = document.getElementById('theme-style');
+      if (theme.getAttribute('href') == 'styles.css') {
+        theme.href = 'dark-theme.css';
+      } else {
+        theme.href = 'styles.css';
+      }
+    }
+        </script>
     </footer>
 </body>
 
