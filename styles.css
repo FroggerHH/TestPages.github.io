@@ -54,7 +54,6 @@ article {
     border-radius: 5px;
     box-shadow: 0 0 10px 0 gray;
     text-align: left;
-    padding-bottom: 600px;
 }
 
 article img {
@@ -71,7 +70,7 @@ footer {
     width: auto;
     background-color: #333;
     color: white;
-    padding-too: 600px;
+    padding-top: 600px;
 }
 
 
