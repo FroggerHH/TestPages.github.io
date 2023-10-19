@@ -35,24 +35,6 @@ header {
     color: #00f;
 }
 
-
-
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
 article {
     max-width: 800px;
     margin: 50px auto;
@@ -60,7 +42,7 @@ article {
     background-color: #f2f2f2;
     border-radius: 5px;
     box-shadow: 0 0 10px 0 gray;
-    text-align: left;
+    text-align: center;
 }
 
 article img {
@@ -71,7 +53,7 @@ article img {
 footer {
     text-align: center;
     padding: 10px;
-    position: fixed;
+    
     bottom: 0;
     width: 100%;
     background-color: #333;
