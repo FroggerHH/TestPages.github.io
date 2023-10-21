@@ -54,7 +54,8 @@ article {
 }
 #menu-button{
     color: #484747;
-    height: 40px;
+    height: 180px;
+    weight: auto;
     position: fixed;
     left: 0;
     mergin: 10px;
