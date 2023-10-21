@@ -52,6 +52,13 @@ article {
     box-shadow: 0 0 10px 0 #808080;
     text-align: left;
 }
+#menu-button{
+    color: #484747;
+    height: 40px;
+    position: fixed;
+    left: 0;
+    mergin: 10px;
+}
 
 :after, :before {
     box-sizing: inherit;
