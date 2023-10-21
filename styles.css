@@ -55,10 +55,10 @@ article {
 #menu-button{
     color: #484747;
     height: 180px;
-    weight: auto;
+    weight: 180px;
     position: fixed;
     left: 0;
-    mergin: 10px;
+    mergin: 100px;
 }
 
 :after, :before {
