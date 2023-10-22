@@ -1,88 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <title>Всё о компьютерах</title>
+    <title>Школа 33</title>
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-    <link href="compPhoto1.png" rel="shortcut icon" type="image/png">
     <link href="styles.css" rel="stylesheet" type="text/css">
-    <link href="styles.css" id="theme-style" rel="stylesheet">
     <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+    <link href="https://use.typekit.net/zlt1wkm.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/icomoon" rel="stylesheet">
+    <link href="images/shortcutIcon.png" rel="shortcut icon">
 </head>
 
 <body>
-<div id="wrap">
-    <header>
-        <h1>Всё о компьютерах</h1>
-        <button id="menu-button" =>
-            
-        </button>
-    </header>
-    <nav>
-        <ul>
-            <li>
-                <p>Страницы <br></p>
-                <ul class="dropdown">
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="programs.html">Программы</a></li>
-                    <li><a href="dictionary.html">Словарь</a></li>
-                    <li><a href="survey.html">Анкета</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-    <article>
-        <div style="text-align: center; margin-bottom: 20px;">
-            <img alt="Компьютер" src="compPhoto1.png" style="width: 150px; height: 150px; border-radius: 50%;">
-            <div style="margin-top: 10px; font-weight: bold;">Компьютер</div>
+
+<header>
+    <div class="banner">
+        <div id="top-container">
+            <div id="embedded-top-container">
+                <div id="top-tagline">
+                    МБОУ СШ №33 г. Липецка имени П.Н.Шубина
+                </div>
+                <img alt="logo" class="image" src="images/schoolIcon.jpg" style="left: 0; border-radius: 45%">
+                <div class="top-navigation">
+                    <nav>
+                        <ul id="top-nav-list">
+                            <li><a class="nav-link" href="/for-teachers.html">Учителям</a></li>
+                            <li><a class="nav-link" href="/for-pupils.html">Ученикам</a></li>
+                            <li><a class="nav-link" href="/feedback.html">Отзыв</a></li>
+                            <li id="quick-links-text">
+                                <div class="nav-link">Другое</div>
+                                <div class="quick-links-div">
+                                    <ul id="quick-links-ul">
+                                        <li><a class="nav-link" href="https://schools48.ru/auth/login-page"
+                                               target="_blank">Элл. журнал</a>
+                                        </li>
+                                        <li>
+                                            <img alt="info"
+                                                 class="image"
+                                                 src="images/info.png"
+                                                 style="width: 15px; vertical-align:middle;">
+                                            <a class="nav-link" href="#contact-info" target="_self">Контакты</a>
+                                        </li>
+                                        <li><a class="nav-link" href="/feedback.html" target="_blank">Survey</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
-        <h2>Что такое компьютер?</h2>
-        <p>Компьютер - это электронное устройство, способное выполнять различные операции с данными в соответствии с
-            заданными инструкциями. Компьютеры используются в различных сферах, включая науку, бизнес, образование и
-            развлечения.</p>
+        <div id="top-head"></div>
+    </div>
+</header>
 
-        <h2>Зачем нужен компьютер?</h2>
-        <p>Компьютеры используются для обработки информации, хранения данных, выполнения сложных вычислений, создания
-            контента, общения и многого другого. Они стали неотъемлемой частью современного общества.</p>
-    </article>
-    <footer>
-        <div class="switch-container">
-            <span class="switch-label">Тёмная тема</span>
-            <label class="switch">
-                <input onclick="toggleTheme()" type="checkbox">
-                <span class="slider round"></span>
-            </label>
-        </div>
-        <br>
-        <div class="container">
-            <p>© 2023 Всё о компьютерах. <a href="https://github.com/FroggerHH/TestPages.github.io/blob/main/">Исходный
-                код</a></p>
-        </div>
 
-        <script>
-            function toggleTheme() {
-                const theme = document.getElementById('theme-style');
-                if (theme.getAttribute('href') === 'styles.css') {
-                    theme.href = 'dark-theme.css';
-                    localStorage.setItem('theme', 'dark');
-                } else {
-                    theme.href = 'styles.css';
-                    localStorage.setItem('theme', 'light');
-                }
-            }
-
-            document.addEventListener('DOMContentLoaded', function () {
-                const savedTheme = localStorage.getItem('theme');
-                const theme = document.getElementById('theme-style');
-                if (savedTheme === 'dark') {
-                    theme.href = 'dark-theme.css';
-                    document.querySelector('.switch input[type="checkbox"]').checked = true;
-                } else theme.href = 'styles.css';
-            });
-        </script>
-    </footer>
-
-    <noscript>Please enable javascript to continue.</noscript>
-</div>
+<noscript>Please enable javascript to continue.</noscript>
 </body>
 
 </html>
